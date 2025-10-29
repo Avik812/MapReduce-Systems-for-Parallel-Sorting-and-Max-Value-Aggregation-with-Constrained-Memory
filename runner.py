@@ -9,7 +9,7 @@ from utils.helpers import is_sorted
 def run_experiments():
     sizes = [32, 131072]
     workers = [1, 2, 4, 8]
-    print("=== MapReduce Parallel Sorting ===\n")
+    print("\n MapReduce Parallel Sorting \n")
 
     for size in sizes:
         data = [random.randint(0, 1000000) for _ in range(size)]
@@ -30,7 +30,7 @@ def run_experiments():
 
         print()
 
-    print("=== Max-Value Aggregation ===\n")
+    print(" Max-Value Aggregation \n")
 
     for size in sizes:
         data = [random.randint(0, 1000000) for _ in range(size)]
